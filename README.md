@@ -24,6 +24,8 @@ The workflow in JS (with details below) is:
 - Subscribe to a channel
 - Set an event listener for messages
 
+Cautionary note that currently, messages created in the console will not broadcast while we still use async rathher than redis in development.
+
 ### Opening a WebSocket:
 In vanilla JS, you can interact with this app by connecting to the websocket route at `/cable` (default is "ws://localhost:3000/cable" in development.)
 
