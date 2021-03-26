@@ -8,8 +8,6 @@ Rails.application.routes.draw do
     # POST "messages/:message_id/likes"
   end
 
-  get '/farts', to: "messages#farts"
-
   mount ActionCable.server => '/cable'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
